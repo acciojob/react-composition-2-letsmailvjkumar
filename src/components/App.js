@@ -10,7 +10,7 @@ function App() {
       {showModal && (
         <div className="model-overlay" onClick={() => setShowModal(false)}>
           <button className="model-close" onClick={() => setShowModal(false)}>Close</button>
-          <p className="model-p">This is the content of the modal</p>
+          <p className="model-p" onClick={() => setShowModal(false)}>This is the content of the modal</p>
         </div>
       )}
     </div>
